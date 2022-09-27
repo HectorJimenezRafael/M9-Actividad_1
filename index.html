@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <script src="https://kit.fontawesome.com/20a538d92d.js" crossorigin="anonymous"></script>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <!-- fuente -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="js/slider.js">
+    <!-- bootstrap -->
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
+
+    <title>BAR-RESTAURANT-ALMANSA</title>
+</head>
+
+<!-- menu -->
+<!-- <header class="header">
+    <div class="header-top">
+        <div class="row-c" style="text-align:center;text-align: center;display: flex; align-items: center;">
+            <div class="column-4">
+                <img class="logo" src="img/logo_almansa.png" alt="">
+                <img class="logo_responsive" src="img/logo_responsive.png" alt="">
+            </div>
+            <div class="column-4">
+                <a href="tel:+34678567876"> <img class="icono_peque" src="img/móvil.png" alt=""> Mòbil:+34678567876 </a>
+            </div>
+            <div class="column-4">
+                <a href="https://wa.me/661023069"> <img class="icono_peque" src="img/whatsapp2.png" alt=""> Whatsapp:661023069</a>
+            </div>
+
+            <div class="column-4">
+
+            </div>
+
+        </div>
+
+
+
+        <button class="header-btn">=</button>
+    </div>
+    <nav class="header-menu">
+    <ul>
+        <li><a href="#">Link 1</a></li>
+
+    </ul>
+    </nav>
+</header> -->
+
+
+<!-- fin menu -->
+
+
+<body style="background-color: #D1C592;">
+    <header style="background-color:#EBC32A ; ">
+
+        <div class="row-c" style="text-align:center;text-align: center;display: flex; align-items: center;">
+
+            <div class="column-4">
+                <img class="logo" src="img/logo_almansa.png" alt="">
+                <img class="logo_responsive" src="img/logo_responsive.png" alt="">
+
+            </div>
+            <div class="column-4">
+
+                <a href="tel:+34678567876"> <img class="icono_peque" src="img/móvil.png" alt="">+34678567876 </a>
+
+            </div>
+
+            <div class="column-4">
+                <a href="https://wa.me/661023069"> <img class="icono_peque" src="img/whatsapp2.png" alt=""> +34661023069</a>
+            </div>
+
+            <div class="column-4">
+
+                <button class="header-btn">=</button>
+
+                <nav class="header-menu">
+                    <ul>
+                        <li><a style="color: black;" href="#menu">Ver Carta</a></li>
+                        <li><a style="color: black;" href="#horario">Horario</a></li>
+                        <li><a style="color: black;" href="#ubicacion">Ubicación</a></li>
+                        <li><a style="color: black;" href="#nosotros">Nosotros</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <script>
+        const header_btn = document.querySelector('.header-btn')
+        const header_menu = document.querySelector('.header-menu')
+        header_btn.addEventListener('click', () => {
+            if (header_menu.style.display != 'block') {
+                header_menu.style.display = 'block'
+                header_btn.innerHTML = 'X'
+            } else {
+                header_menu.style.display = 'none'
+                header_btn.innerHTML = '='
+            }
+        })
+    </script>
+
+    <!-- titulo -->
+
+    <div class="container">
+        <h1 class="neon">•. BAR RESTAURANT .•</h1>
+        <p class="neon2">ALMANSA</p>
+        <p class="neon3">
+            <span class="flicker1">♣</span>
+            <span class="flicker2">♣</span>
+            <span class="flicker3">♣</span>
+        </p>
+    </div>
+    <br>
+    <br>
+    <!-- fin titulo -->
+
+    <!-- <div class="row-c">
+        <div class="column-1 ">
+            <h1 class="titulo ">BAR RESTAURANT ALMANSA</h1>
+        </div>
+    </div>
+
+    <br>
+    <br> -->
+
+    <!-- slider -->
+
+    <div class="container-lg my-3">
+        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+            <!-- Carousel indicators -->
+            <ol class="carousel-indicators">
+                <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
+                <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+                <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for carousel items -->
+            <div class="carousel-inner" style="height: 450px; text-align: center;">
+                <div class="carousel-item active">
+
+                    <img src="img/img7.jpeg" class="d-block w-100 img_R" alt="Slide 1">
+
+                </div>
+                <div class="carousel-item">
+                    <img src="img/img8.jpeg" class="d-block w-100 img_R" alt="Slide 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/img9.jpeg" class="d-block w-100 img_R" alt="Slide 3">
+                </div>
+            </div>
+
+            <!-- Carousel controls -->
+            <a class="carousel-control-prev" href="#myCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#myCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+
+        <!-- fin slider -->
+
+        <!-- <br> <br>
+        <div style="background-color: #9E956F;" class="flex">
+            <div class="column-2 ">
+                <p style="font-size: 20px;">Almansa es un espacio que fundamos con la idea de disfrutar de los pequeños placeres que nos hacen felices: la cerveza, los amigos, los buenos snacks y la buena música.
+                </p>
+            </div>
+        </div>
+        <div class="flex " style="background-color: #9E956F;">
+            <div class="column-2 ">
+                <p style="font-size: 20px;">El concepto que nos hace únicos La calidad y la originalidad son marca de la casa. Una de las claves del éxito de la carta es el pan de receta patentada y que además se hornea en el momento en el que el cliente hace el pedido.
+                </p>
+            </div>
+        </div> -->
+
+        <br>
+        <br>
+        <div style="background-color: #9E956F;" class="row-c">
+            <div class="column-2 ">
+                <section style=" margin-left: 20px; margin-top: 20px; margin-right: 20px;">
+
+                    <h3>
+                        <b> <p style="font-size: 30px; text-align: center;">Bar Restaurant Almansa</p> </b>
+                    </h3>
+                    <p style="font-size: 20px;">Es un espacio que fundamos con la idea de disfrutar de los pequeños placeres que nos hacen felices: la cerveza, los amigos, los buenos snacks y la buena música.
+                    </p>
+                </section>
+            </div>
+            <div class="column-2">
+                <section style=" margin-left: 20px; margin-top: 20px; margin-right: 20px;">
+                    <h3>
+                        <b> <p style="font-size: 30px; text-align: center;">El concepto que nos hace únicos</p></b>
+                    </h3>
+
+                    <p style="font-size: 20px;"> La calidad y la originalidad son marca de la casa. Una de las claves del éxito de la carta es el pan de receta patentada y que además se hornea en el momento en el que el cliente hace el pedido.
+                    </p>
+                </section>
+            </div>
+
+        </div>
+
+
+        <br>
+        <br>
+        <!-- seccion menu -->
+        <section id="menu">
+
+            <div class="flex">
+
+
+
+                <button class="btn btn-warning" onclick="location.href='carta/Menú_Restaurante_Almansa.pdf'"> <img class="carta" src="img/menu.png" alt=""> <b><p>VER MENÚ</p> </b> </button>
+
+            </div>
+        </section>
+
+
+        <br>
+        <br>
+        <!-- seccion horario -->
+        <section>
+            <div class="flex">
+                <div class="row-c horario" style="width: 100%; background-color: #9E956F;;text-align: center;">
+                    <div class="column-2">
+
+                        <img src="img/reloj.jpeg" alt="">
+                    </div>
+
+
+
+                    <div id="horario" class="column-2" style="text-align:center ;margin-top: 20px;">
+                        <b><h2>HORARIO DE APERTURA <i class="fa-solid fa-clock"></i>
+                        </h2></b>
+
+                        <br> <b>
+                        <p style="font-size: 20px;"> <i class="fa-solid fa-minus"></i> LUNES CERRADO</p>
+                        <p style="font-size: 20px;"><i class="fa-solid fa-minus"></i> ABRIMOS DE MARTES A DOMINGO </p>
+                        <p style="font-size: 20px;">8:00 - 00:30</p> </b>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+        <br>
+        <br>
+        <br>
+        <!-- seccion mapa -->
+        <section>
+            <div class="flex">
+                <div class="row-c" style="width: 100%;">
+                    <div class="column-2">
+                        <b><h2 id="ubicacion">¿Dónde estamos ubicados? <i class="fa-solid fa-map-location"></i>
+                </h2></b>
+
+                        <br>
+                        <b><p>Carrer del Bosc, 08521 Bellavista, Barcelona</p></b>
+
+                        <p>Rodeado de naturaleza, podrás disfrutar de un precioso paisaje mientras degustas de nuestra gran variedad de platos.</p>
+
+                        <p>Nuestra carta está elaborada con productos de proximidad de excelente calidad</p>
+
+                        <b><p>No dudes en visitarnos.</p></b>
+
+
+                        <p><b>Transportes cercanos:</b> <br> <i class="fa-solid fa-train"></i> Renfe-líneas (R2N,R2) <br> <i class="fa-solid fa-bus"></i>Autobús (L20,L22,512)</p>
+
+                    </div>
+
+
+
+                    <div class="column-2" style="text-align:center">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2982.758829012617!2d2.2961905153702937!3d41.617726579243616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4c7d4b0974f17%3A0xe51745f0c1df7360!2sCarrer%20del%20Bosc%2C%2008521%20Bellavista%2C%20Barcelona!5e0!3m2!1ses!2ses!4v1663875832063!5m2!1ses!2ses"
+                            width="400" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- seccion de fotos con platos destacados -->
+
+        <section>
+
+            <div class="flex">
+
+                <div id="main-container">
+                    <h2 style="text-align: center;">PLATOS ESTRELLA <img class="estrella" src="img/Estrella.png"></h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="text-align: center;">Valoración</th>
+                                <th style="text-align: center;">Plato</th>
+                                <th style="text-align: center;">Precio</th>
+                            </tr>
+                        </thead>
+
+                        <tr>
+                            <td class="espacio_plato"> <img class="estrella" src="img/Estrella.png" alt=""> <img class="estrella" src="img/Estrella.png" alt=""><img class="estrella" src="img/Estrella.png" alt=""><img class="estrella" src="img/Estrella.png" alt=""></td>
+                            <td class="espacio_plato"> <img class="plato" src="img/bravas.jfif" alt="">
+                                <p>Bravas</p>
+                            </td>
+                            <td class="espacio_plato">4 €</td>
+                        </tr>
+                        <tr>
+                            <td class="espacio_plato"><img class="estrella" src="img/Estrella.png" alt=""> <img class="estrella" src="img/Estrella.png" alt=""><img class="estrella" src="img/Estrella.png" alt=""><img class="estrella" src="img/Estrella.png" alt=""></td>
+                            <td class="espacio_plato"> <img class="plato" src="img/hamburguesa.jpg" alt="">
+                                <p>Hamburguesa Completa</p>
+                            </td>
+                            <td class="espacio_plato">5 €</td>
+                        </tr>
+                        <tr>
+                            <td class="espacio_plato"> <img class="estrella" src="img/Estrella.png"><img class="estrella" src="img/Estrella.png" alt=""> <img class="estrella" src="img/Estrella.png" alt=""><img class="estrella" src="img/Estrella.png" alt=""><img class="estrella"
+                                    src="img/Estrella.png" alt=""></td>
+                            <td class="espacio_plato"> <img class="plato" src="img/planchita.webp" alt="">
+                                <p>Planchita</p>
+                            </td>
+                            <td class="espacio_plato">15 €</td>
+                        </tr>
+                        <tr>
+                            <td class="espacio_plato"><img class="estrella" src="img/Estrella.png"><img class="estrella" src="img/Estrella.png" alt=""> <img class="estrella" src="img/Estrella.png" alt=""><img class="estrella" src="img/Estrella.png" alt=""><img class="estrella"
+                                    src="img/Estrella.png" alt=""></td>
+                            <td class="espacio_plato"> <img class="plato" src="img/verduras.jpg" alt="">
+                                <p>Verduras a la plancha</p>
+                            </td class="espacio_plato">
+                            <td class="espacio_plato">8 €</td>
+                        </tr>
+                        <tr>
+                            <td class="espacio_plato"><img class="estrella" src="img/Estrella.png"><img class="estrella" src="img/Estrella.png" alt=""> <img class="estrella" src="img/Estrella.png" alt=""><img class="estrella" src="img/Estrella.png" alt=""><img class="estrella"
+                                    src="img/Estrella.png" alt=""></td>
+                            <td class="espacio_plato"> <img class="plato" src="img/churrasco.jpg" alt="">
+                                <p>Churrasco</p>
+                            </td class="espacio_plato">
+                            <td class="espacio_plato">7 €</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- pie de página -->
+
+        <footer class="pie-pagina">
+            <div class="grupo-1">
+                <div class="box">
+                    <figure>
+                        <a href="#" style="text-align: center;">
+                            <img src="img/logo_almansa.png" class="logo" alt="logo Almansa">
+                            <img src="img/logo_responsive.png" class="logo_responsive_footer" alt="Logo Almansa">
+                        </a>
+                    </figure>
+                </div>
+                <div class="box">
+                    <h2 id="">SOBRE NOSOTROS</h2>
+                    <p>Lo más importante para nosotros es el cliente. Contamos con un gran equipo de profesionales que se encargan de cuidar todos los detalles para ofrecerte el mejor servicio y la mejor calidad al mejor precio.</p>
+
+                </div>
+                <div class="box">
+                    <h2>SIGUENOS</h2>
+                    <div class="red-social">
+                        <a href="https://es-es.facebook.com/" class="fa fa-facebook"></a>
+                        <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+                        <a href="https://twitter.com/?lang=es" class="fa fa-twitter"></a>
+                        <a href="https://www.youtube.com/" class="fa fa-youtube"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="grupo-2">
+                <small>&copy; 2022 <b>ALMANSA</b> - Todos los Derechos Reservados.</small>
+            </div>
+        </footer>
+
+</body>
+
+</html>
