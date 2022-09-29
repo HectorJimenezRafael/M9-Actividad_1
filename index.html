@@ -15,7 +15,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap" rel="stylesheet">
 
-
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="120x120" href="./favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/site.webmanifest">
+    <link rel="mask-icon" href="./favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
 
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="js/slider.js">
@@ -65,7 +72,7 @@
 
 
 <body style="background-color: #D1C592;">
-    <header style="background-color:#EBC32A ; ">
+    <header style="background-color:#EBC32A ;position: fixed; top: 0; width: 100%; z-index: 100;">
 
         <div class="row-c" style="text-align:center;text-align: center;display: flex; align-items: center;">
 
@@ -94,6 +101,7 @@
                         <li><a style="color: black;" href="#horario">Horario</a></li>
                         <li><a style="color: black;" href="#ubicacion">Ubicación</a></li>
                         <li><a style="color: black;" href="#nosotros">Nosotros</a></li>
+
                     </ul>
                 </nav>
             </div>
@@ -114,8 +122,12 @@
     </script>
 
     <!-- titulo -->
-
-    <div class="container">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="container" style="top: 125px;">
         <h1 class="neon">•. BAR RESTAURANT .•</h1>
         <p class="neon2">ALMANSA</p>
         <p class="neon3">
@@ -160,6 +172,7 @@
                 </div>
                 <div class="carousel-item">
                     <img src="img/img9.jpeg" class="d-block w-100 img_R" alt="Slide 3">
+
                 </div>
             </div>
 
@@ -207,7 +220,7 @@
                         <b> <p style="font-size: 30px; text-align: center;">El concepto que nos hace únicos</p></b>
                     </h3>
 
-                    <p style="font-size: 20px;"> La calidad y la originalidad son marca de la casa. Una de las claves del éxito de la carta es el pan de receta patentada y que además se hornea en el momento en el que el cliente hace el pedido.
+                    <p id="menu" style="font-size: 20px;"> La calidad y la originalidad son marca de la casa. Una de las claves del éxito de la carta es el pan de receta patentada y que además se hornea en el momento en el que el cliente hace el pedido.
                     </p>
                 </section>
             </div>
@@ -218,16 +231,13 @@
         <br>
         <br>
         <!-- seccion menu -->
-        <section id="menu">
+        <section>
 
-            <div class="flex">
-
-
-
-                <button class="btn btn-warning" onclick="location.href='carta/Menú_Restaurante_Almansa.pdf'"> <img class="carta" src="img/menu.png" alt=""> <b><p>VER MENÚ</p> </b> </button>
+            <div class="flex" id="horario">
+                <button class="btn btn-warning"><a href='carta/Menú_Restaurante_Almansa.pdf' target="_blank"><img class="carta" src="img/menu.png" alt=""> <b><p style="text-align: center;">VER MENÚ</p></b></a></button>
 
             </div>
-        </section>
+        </section id="horario">
 
 
         <br>
@@ -243,14 +253,14 @@
 
 
 
-                    <div id="horario" class="column-2" style="text-align:center ;margin-top: 20px;">
+                    <div class="column-2" style="text-align:center ;margin-top: 20px;">
                         <b><h2>HORARIO DE APERTURA <i class="fa-solid fa-clock"></i>
                         </h2></b>
 
                         <br> <b>
-                        <p style="font-size: 20px;"> <i class="fa-solid fa-minus"></i> LUNES CERRADO</p>
-                        <p style="font-size: 20px;"><i class="fa-solid fa-minus"></i> ABRIMOS DE MARTES A DOMINGO </p>
-                        <p style="font-size: 20px;">8:00 - 00:30</p> </b>
+                        <p style="font-size: 20px;">  LUNES CERRADO</p>
+                        <p style="font-size: 20px;"> ABRIMOS DE MARTES A DOMINGO </p>
+                        <p id="ubicacion" style="font-size: 20px;">8:00 - 00:30</p> </b>
                     </div>
 
                 </div>
